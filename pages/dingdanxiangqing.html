@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <title>惠农源丨订单详情</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    
+    <!-- Icon fonts -->
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+    <!-- Core stylesheets -->
+    <link rel="stylesheet" href="../css/bootstrap.css" class="theme-settings-bootstrap-css">
+    <link rel="stylesheet" href="../css/appwork.css" class="theme-settings-appwork-css">
+    <link rel="stylesheet" href="../css/uikit.css">
+
+    <!-- Core scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <style type="text/css">
+      body {
+        background: #f5f5f5;
+      }
+      .title h3{
+        padding: 10px;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        font-family:  Times, TimesNR, 'New Century Schoolbook',
+        Georgia, 'New York', serif;
+      }
+      .title a{
+        position: absolute;
+        left:15px;
+        top:5px;
+      }
+      .title i{
+        font-size: 30px;
+        color: #fff;
+      }
+      a{
+        text-decoration: none;
+        color:#fff;
+      }
+      a:hover{
+        text-decoration: none;
+        color:#fff;
+      }
+      .screen{
+        max-width: 1000px;
+      }
+      .annu{
+        border-radius: 50px;
+      }
+      .aniu{
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <a href="wode.html"><i class='iconfont icon-fanhui'></i></a>
+      <h3>订单详情</h3>
+    </div>
+    <div class="container screen">
+      <div class="page-loader">
+        <div class="bg-primary"></div>
+      </div>
+      <!-- Layout wrapper -->
+      <div class="layout-wrapper layout-2">
+        <div class="layout-inner">
+          <!-- Layout container -->
+          <div class="layout-container">
+            <!-- Layout content -->
+            <div class="layout-content">
+              <!-- Content -->
+              <div class="container-fluid flex-grow-1 container-p-y">
+                <h4 class="font-weight-bold py-3 mb-4">
+                订单 <span class="text-muted">#7538</span>
+                </h4>
+                <div class="card">
+                  <!-- Status -->
+                  <div class="card-body">
+                    <strong class="mr-2">状态：</strong>
+                    <span class="text-big"><span class="badge badge-success">交易成功</span></span>
+                    <span class="text-muted small ml-1">07/20/2019</span>
+                  </div>
+                  <hr class="m-0">
+                  <!-- / Status -->
+                  <!-- Info -->
+                  <div class="card-body pb-1 text-right">
+                    <div class="row">
+                      <div class="col-12 mb-3">
+                        <button type="button" class="btn btn-outline-secondary annu">&emsp;评价&emsp;</button>
+                        &emsp;
+                        <button type="button" class="btn btn-outline-secondary annu">再来一单</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <!-- / Info -->
+                  <!-- Items -->
+                  <div class="card-body">
+                    <h6 class="small font-weight-semibold">
+                    商品信息
+                    </h6>
+                    <div class="table-responsive">
+                      <table class="table table-bordered m-0">
+                        <tbody>
+                          <tr>
+                            <td class="p-4">
+                              <div class="media align-items-center">
+                                <img src="../images/xilanhua.png" class="d-block ui-w-40 ui-bordered mr-4" alt>
+                                <div class="media-body">
+                                  <a href="javascript:void(0)" class="d-block text-body">西兰花 <span class="text-muted">#3455632</span></a>
+                                  <small>
+                                  精细选种，人工除草远离化学药剂，当天现摘现发，整棵发货。
+                                  </small>
+                                </div>
+                              </div>
+                            </td>
+                            <!-- Set column width -->
+                            <td class="align-middle p-4" style="width: 66px;">
+                              x1
+                            </td>
+                            <!-- Set column width -->
+                            <td class="text-right font-weight-semibold align-middle p-4" style="width: 100px;">
+                              ￥39.00
+                            </td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="col-12 mb-3 text-right">
+                      <button type="button" class="btn btn-outline-secondary annu aniu">申请售后</button>
+                    </div>
+                  </div>
+                  <!-- / Items -->
+                  <!-- Billing -->
+                  <div class="card-body">
+                    <h6 class="small font-weight-semibold">
+                    价格信息
+                    </h6>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <div class="text-muted small">商品总价</div>
+                       ￥39.00
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="text-muted small">运费（快递）</div>
+                        ¥0.00
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
+                        <div class="text-muted small">订单总价</div>
+                        ￥39.00
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="text-muted small">优惠券</div>
+                        -¥0.00
+                      </div>
+                      
+                      <div class="col-12">
+                        <div class="text-muted small">实付款</div>
+                        ￥39.00
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <!-- / Billing -->
+                  <!-- Shipping -->
+                  <div class="card-body">
+                    <h6 class="small font-weight-semibold">
+                    订单信息
+                    </h6>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <div class="text-muted small">订单编号</div>
+                        5438438
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <div class="text-muted small">创建时间</div>
+                        2019-07-14 8:00:00
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
+                        <div class="text-muted small">付款时间</div>
+                        2019-07-14 8:01:00
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
+                        <div class="text-muted small">发货时间</div>
+                        2019-07-14 9:00:00
+                      </div>
+                      
+                      <div class="col-12">
+                        <div class="text-muted small">成交时间</div>
+                        2019-07-14 11:00:00
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="m-0">
+                  <!-- / Shipping -->
+                </div>
+              </div>
+              <!-- / Content -->
+            </div>
+            <!-- Layout content -->
+          </div>
+          <!-- / Layout container -->
+        </div>
+        <!-- Overlay -->
+        <div class="layout-overlay layout-sidenav-toggle"></div>
+      </div>
+    </div>
+    <!-- / Layout wrapper -->
+
+  </body>
+</html>

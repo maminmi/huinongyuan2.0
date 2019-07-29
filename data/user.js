@@ -1,0 +1,28 @@
+jsonf({
+	"user":
+		{
+			"userId":"001",
+			"userName":"Lanking",
+			"userpassword":"",
+			"userPayPassword":"",
+			"userImg":"../images/picture.jpg"
+		},
+	"infos":
+	[
+	    {
+	    	"infoImg":"../images/g9.jpg",
+	    	"infocontent":"贾汪大洞山石榴,果皮亮丽、质感厚重、籽粒晶莹、味美多汁。",
+	    	"infotime":"3分钟前",
+	    },
+	    {
+	    	"infoImg":"../images/g5.jpg",
+	    	"infocontent":"大沙河红富士苹果爽口多汁、甜脆味美、色泽艳、肉质细，独具风味浓郁、极耐储藏",
+	    	"infotime":"1小时前",
+	    },
+	    {
+	    	"infoImg":"../images/xilanhua.png",
+	    	"infocontent":"有机西兰花,精细选种，人工除草远离化学药剂，当天现摘现发，整棵发货",
+	    	"infotime":"1天前",
+	    },
+	]
+})

@@ -1,0 +1,31 @@
+{
+	"product":[
+		{
+			"productId":"1",
+			"productType":"fru",
+			"productPrice":"39",
+			"productNumber":"1",
+			"productName":"新沂水蜜桃",
+			"productDesc":"白里透红，个大、味甜、肉脆、口感好，补中益气、养阴生津",
+			"productImg":"../images/g10.jpg",
+		},
+		{
+			"productId":"7",
+			"productType":"veg",
+			"productPrice":"39",
+			"productNumber":"1",
+			"productName":"有机西兰花",
+			"productDesc":"精细选种，人工除草远离化学药剂，当天现摘现发，整棵发货",
+			"productImg":"../images/xilanhua.png"
+		},
+		{
+			"productId":"12",
+			"productType":"veg",
+			"productPrice":"39",
+			"productNumber":"1",
+			"productName":"徐州大红袍萝卜",
+			"productDesc":"清热、解毒、利湿、散瘀、养心清血、健胃消食、化痰止咳。",
+			"productImg":"../images/luobo.jpg"
+		}
+	]
+}

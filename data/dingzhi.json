@@ -1,0 +1,38 @@
+{
+	"dingzhiImg":[
+		{
+			"imgId":"01",
+			"imgSrc":"../images/3.jpg",
+
+		},
+		{
+			"imgId":"02",
+			"imgSrc":"../images/4.jpg",
+
+		},
+		{
+			"imgId":"03",
+			"imgSrc":"../images/6.jpg",
+
+		},
+
+	],
+	"dingzhiTitle":"惠农源为您专属定制",
+	"dingzhiDesc":"&emsp;&emsp;在这里，惠农源为您提供两个定制模块。在切身体会亲近自然模块中，您可以选择您喜欢的农庄，亲身体会种植和采摘的乐趣。在零距离接触自然的同时也能增进与家人之间的距离。在定制你的绿色食品模块中，我们也为您提供多种有价值的水果、蔬菜制作的专属绿色食品，满足您的需求。",
+	"parts":[
+		{
+			"partId":"01",
+			"partImg":"../images/1.jpg",
+			"partTitle":"切身体会亲近自然",
+			"partDesc":"&emsp;&emsp;农业亲身体验，父母可以提前预约，在闲暇时带孩子去农村感受一下农业种植的乐趣和农村的氛围。",
+			"partLike":"1292",
+		},
+		{
+			"partId":"02",
+			"partImg":"../images/2.jpg",
+			"partTitle":"定制你的绿色食品",
+			"partDesc":"&emsp;&emsp;绿色有机食品也越来越成为人们关注与向往的方向，平台可以搜集一些有此种需求的消费者，为他们定制他们想要的绿色食品。",
+			"partLike":"1292",
+		}
+	]
+}

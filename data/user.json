@@ -1,0 +1,11 @@
+{
+	"user":[
+		{
+			"userId":"001",
+			"userName":"Lanking",
+			"userpassword":"",
+			"userPayPassword":"",
+			"userimg":"../images/denglu.jpg"
+		}
+	]
+}

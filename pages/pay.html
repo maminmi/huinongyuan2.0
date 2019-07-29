@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>惠农源 | 支付</title>
+		<!-- 引入icon  css文件 -->
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">  <!-- type 可省略 -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css" >
+		<!-- 引入icon font css -->
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+		<link rel="stylesheet" href="../css/homestyle.css" type="text/css" media="all" />
+    	<link rel="stylesheet" href="../css/home.css" type="text/css" media="all" />
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.title h3{
+				padding: 10px;
+				text-align: center;
+				background-color: #000;
+				color: #fff;
+				font-family:  Times, TimesNR, 'New Century Schoolbook',
+				Georgia, 'New York', serif;
+			}
+			.title a{
+				position: absolute;
+				left:15px;
+				top:5px;
+			}
+			.title i{
+				font-size: 30px;
+				color: #fff;
+			}
+			a{
+				text-decoration: none;
+				color:#fff;
+			}
+			a:hover{
+				text-decoration: none;
+				color:#fff;
+			}
+			.icon-zhifubao{
+				color:#00B2EE;
+			}
+			.icon-weixin1{
+				color:#00CD00;
+			}
+			.icon-weibiaoti-{
+				color:#f10215;
+			}
+			.list-group-item.active {
+			    color: #fff;
+			    background-color:#17a2b8;
+			    border-color: #17a2b8;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="title">
+			<a href="dingdanxiangqing.html"><i class='iconfont icon-fanhui'></i></a>
+			<h3>支付</h3>
+		</div>
+		
+		<div class="container-fluid row text-center" style="margin-top:60px">
+			<div class="col-lg-4 col-md-2 col-1"></div>
+			<div class="col-lg-4 col-md-8 col-10">
+				<div class="list-group" id="list-tab" role="tablist">
+					<a class="list-group-item list-group-item-action active block" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home"><i class='iconfont icon-zhifubao'></i>支付宝</a>
+					<a class="list-group-item list-group-item-action  block" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile"><i class='iconfont icon-weixin1'></i>微信</a>
+					<a class="list-group-item list-group-item-action block" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages"><i class='iconfont icon-weibiaoti-'></i>银行卡</a>					
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-2 col-1"></div>
+		</div>
+		<div class="row" style="margin-top:100px">
+			<div class="col-lg-5 col-4"></div>
+			<div class="col-lg-2 col-4"><a href="#popup1"><button type="button" class="btn btn-info btn-lg btn-block">支付</button></a></div>
+			<div class="col-lg-5 col-4"></div>
+		</div>
+
+		<div id="popup1" class="overlay">
+	      <div class="popup" style="width:90%;margin:200px auto" >
+	        <!-- <img src="../images/abou.jpg" alt="Popup Image" class="img-fluid" /> -->
+	        <p class="mt-4 editContent">支付成功</p><!-- 欢迎来到惠农源欢迎来到惠农源欢迎来到惠农源欢迎来到惠农源欢迎来到惠农源欢迎来到惠农源欢迎来到惠农源欢迎来到惠农源欢迎来到惠农源 -->
+	       <a class="close" href="#about">&times;</a>
+      </div>
+    </div>
+	</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8" />
+		<title>惠农源 | 定制</title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+		<meta content="" name="description" />
+		<meta content="" name="author" />
+		
+		<!-- ================== BEGIN BASE CSS STYLE ================== -->
+		<link href="../css/all.min.css" rel="stylesheet" />
+		<link href="../css/animate.min.css" rel="stylesheet" />
+		<link href="../css/dingzhistyle.min.css" rel="stylesheet" />
+		<link href="../css/style-responsive.min.css" rel="stylesheet" />
+		<link href="../css/default.css" id="theme" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" href="../css/bootstrap.min.css" >
+		<!-- ================== END BASE CSS STYLE ================== -->
+		
+		<!-- ================== BEGIN BASE JS ================== -->
+		<script src="../js/pace.min.js"></script>
+		<script src="../js/vue.js"></script>
+	    <script src="../js/js.cookie.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<!-- ================== END BASE JS ================== -->
+		<style type="text/css">
+			body {
+				background: #f5f5f5;
+			}
+			.navbar-dark{
+				background-color: #111;
+			}
+			.nav-item .nav-link{
+				color:#fff!important;
+				padding:15px!important;
+			}
+			.dropdown-menu .dropdown-item{
+				background-color: #fff!important;
+			}
+			.content{
+				margin: 10px;
+			}
+			.desgin{
+			margin-bottom: 30px;
+			}
+			.icon-dianzan:hover{
+				color: orange;
+			}
+			a:hover{
+				color: #333!important;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- begin #header -->
+		<!-- 顶部导航开始 -->
+		<nav class="navbar navbar-expand-lg navbar-dark text-center">
+			<div class="col-lg-4 col-4"></div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon" style="text-align:right"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="home.html"><i class="iconfont icon-shouye" style="color:#2FDAB8;font-weight:bold"></i>首页 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="guoshuzibai.html"><i class="iconfont icon-taolun" style="color:#2FDAB8;font-weight:bold"></i>果蔬自白</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="dingzhi.html"><i class="iconfont icon-dingzhi" style="color:#2FDAB8;font-weight:bold"></i>定制</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cart.html"><i class="iconfont icon-gouwuchekong" style="color:#2FDAB8;font-weight:bold"></i>购物车</a>
+					</li>
+					<li class="nav-item">
+			           <a class="nav-link" href="wode.html"><i class="iconfont icon-gouwuchekong" style="color:#2FDAB8;font-weight:bold"></i>我的</a>
+			        </li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0 row" style="margin-left:2px">
+					<input class="form-control col-7" type="search" placeholder="Search" aria-label="Search">
+					<div class="col-1"></div>
+					<button class="btn btn-outline-success my-2 my-sm-0 col-2" type="submit"><i class='iconfont icon-sousuo'></i></button>
+				</form>
+			</div>
+		</nav>
+		<!-- 顶部导航结束 -->
+		<!-- begin #content -->
+		<div id="content" class="content">
+			<!-- begin container -->
+			<div class="container">
+				<!-- begin row -->
+				<div class="row row-space-30">
+					<!-- begin col-9 -->
+					<!-- begin post-list -->
+					<ul class="post-list">
+						<li>
+							<div class="post-content">
+								<!-- begin post-image -->
+								<div class="post-image post-image-with-carousel col-md-12 desgin">
+									<!-- begin carousel -->
+									<div id="carousel-post" class="carousel slide" data-ride="carousel">
+										<!-- begin carousel-indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#carousel-post" data-slide-to="0" class="active"></li>
+											<li data-target="#carousel-post" data-slide-to="1"></li>
+											<li data-target="#carousel-post" data-slide-to="2"></li>
+										</ol>
+										<!-- end carousel-indicators -->
+										<!-- begin carousel-inner -->
+										<div class="carousel-inner " id="img">
+											<div class="carousel-item active" v-for=>
+												<img class="d-block w-100" v-bind:src="dingzhiImg.imgSrc1"  alt="" />
+											</div>
+											<div class="carousel-item">
+												<img class="d-block w-100" v-bind:src="dingzhiImg.imgSrc2" alt="" />
+											</div>
+											<div class="carousel-item">
+												<img class="d-block w-100" v-bind:src="dingzhiImg.imgSrc3" alt="" />
+											</div>
+										</div>
+										<!-- end carousel-inner -->
+										<!-- begin carousel-control -->
+										<a class="carousel-control-prev xiangzuo" href="#carousel-post" role="button" data-slide="prev">
+											<i class="iconfont icon-fanhui" aria-hidden="true" style="font-size:30px;color:#fff"></i>
+										</a>
+										<a class="carousel-control-next xiangyou" href="#carousel-post" role="button" data-slide="next">
+											<i class="iconfont icon-huabanfuben" aria-hidden="true" style="font-size:34px"></i>
+										</a>
+										<!-- end carousel-control -->
+									</div>
+									<!-- end carousel -->
+								</div>
+								<!-- end post-image -->
+								<!-- begin post-info -->
+								<div class="post-info" style="padding-left:15px;padding-right:15px">
+									<h4 class="post-title text-center">
+									惠农源为您专属定制
+									</h4>
+									<div class="post-desc">
+										&emsp;&emsp;在这里，惠农源为您提供两个定制模块。在切身体会亲近自然模块中，您可以选择您喜欢的农庄，亲身体会种植和采摘的乐趣。在零距离接触自然的同时也能增进与家人之间的距离。在定制你的绿色食品模块中，我们也为您提供多种有价值的水果、蔬菜制作的专属绿色食品，满足您的需求。
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<p></p>
+					<!-- begin post-left-info -->
+					<div class="col-md-9">
+						<div class="post-left-info">
+							<div class="post-date">
+								<span class="day">喜欢就点赞吧！</span>
+								
+							</div>
+							<div class="post-likes">
+								<i class='iconfont icon-dianzan'></i>
+								<span class="number">1,292</span>
+							</div>
+						</div>
+						
+						<!-- end post-left-info -->
+						<!-- begin post-content -->
+						<div class="post-content">
+							<!-- begin post-image -->
+							<div class="post-image">
+								<div class="post-image-cover" style="background-image: url('../images/1.jpg');"></div>
+							</div>
+							<!-- end post-image -->
+							<!-- begin post-info -->
+							<div class="post-info">
+								<h4 class="post-title">
+								<p class="text-center">切身体会亲近自然</p>
+								</h4>
+								<!-- 	<div class="post-by">
+										<span class="divider">|</span> <a href="#">Sports</a>, <a href="#">Parachute</a>, <a href="#">Blue Sky</a> <span class="divider">|</span> 12 Comments
+								</div> -->
+								<div class="post-desc">
+									&emsp;&emsp;农业亲身体验，父母可以提前预约，在闲暇时带孩子去农村感受一下农业种植的乐趣和农村的氛围。
+								</div>
+							</div>
+							<!-- end post-info -->
+							<!-- begin read-btn-container -->
+							<div class="read-btn-container desgin">
+								<a href="nature.html" class="read-btn" style="font-size:15px">详情<i class="iconfont icon-xiangyou"> </i></a>
+							</div>
+							<!-- end read-btn-container -->
+						</div>
+						<!-- end post-content -->
+						
+						
+						<!-- begin post-left-info -->
+						<div class="post-left-info">
+							<div class="post-date">
+								<span class="day">喜欢就点赞吧！</span>
+								
+							</div>
+							<div class="post-likes">
+								<i class='iconfont icon-dianzan'></i>
+								<span class="number">1,292</span>
+							</div>
+						</div>
+						<!-- end post-left-info -->
+						<!-- begin post-content -->
+						<div class="post-content">
+							<!-- begin post-image -->
+							<div class="post-image">
+								<div class="post-image-cover" style="background-image: url('../images/2.jpg');"></div>
+							</div>
+							<!-- end post-image -->
+							<!-- begin post-info -->
+							<div class="post-info">
+								<h4 class="post-title">
+								<p class="text-center">定制你的绿色食品</p>
+								</h4>
+								<!-- 	<div class="post-by">
+										<span class="divider">|</span> <a href="#">Sports</a>, <a href="#">Parachute</a>, <a href="#">Blue Sky</a> <span class="divider">|</span> 12 Comments
+								</div> -->
+								<div class="post-desc">
+									&emsp;&emsp;绿色有机食品也越来越成为人们关注与向往的方向，平台可以搜集一些有此种需求的消费者，为他们定制他们想要的绿色食品。
+								</div>
+							</div>
+							<!-- end post-info -->
+							<!-- begin read-btn-container -->
+							<div class="read-btn-container">
+								<a href="greenfood.html" class="read-btn" style="font-size:15px">详情<i class="iconfont icon-xiangyou"> </i></a>
+							</div>
+							<!-- end read-btn-container -->
+						</div>
+						<!-- end post-content -->
+						
+						
+						<!-- begin post-left-info -->
+						
+					</div>
+					<!-- end col-9 -->
+					<!-- begin section-container -->
+					
+					<!-- end section-container -->
+				</div>
+				<!-- end col-3 -->
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- end container -->
+		
+		<!-- end #content -->
+		<!-- 页脚start -->
+	    <footer>
+	      <div class="bg-dark text-center">
+	        <p style="padding:25px 0;color:#ddd">© 2019 惠农源 | Design by <a href="#" target="_blank" class="text-white">电商十五组</a></p>
+	      </div>
+	    </footer>
+	    <!-- 页脚end -->
+         <script>
+            var vm = new Vue({
+              el:"#img",
+              data:{
+                dingzhiImg:{
+                  imgSrc1:"",
+                  imgSrc2:"",
+                  imgSrc3:"",
+                }
+              },
+              created:function(){
+                $.ajax({
+                  url:"../data/dingzhi.js",
+                  type:"GET",
+                  dataType:"jsonp",
+                  jsonpCallback:"jsonb",
+                  crossDomain:true
+                }).done((e)=>{
+                   console.log(e);
+                   this.dingzhiImg.imgSrc1 = e.dingzhiImg.imgSrc1;
+                   this.dingzhiImg.imgSrc2 = e.dingzhiImg.imgSrc2;
+                   this.dingzhiImg.imgSrc3 = e.dingzhiImg.imgSrc3;
+                   console.log(this.dingzhingImg);
+                });
+              }
+            })
+          </script>
+		<!-- ================== BEGIN BASE JS ================== -->
+		<!-- ================== END BASE JS ================== -->
+		
+	</body>
+</html>

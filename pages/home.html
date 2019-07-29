@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<title>惠农源</title>
+		<meta content="" name="description"/>
+		<!-- Meta tag Keywords -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<!--// Meta tag Keywords -->
+		<link rel="shortcut icon" href="../favicon.ico" />
+		<!-- css files -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css"> <!-- Bootstrap-Core-CSS -->
+		<link rel="stylesheet" href="../css/homestyle.css" type="text/css" media="all" />
+		<link rel="stylesheet" href="../css/home.css" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"><!-- Style-CSS -->
+		<!-- //css files -->
+		<script type="text/javascript" src="../js/vue.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<style type="text/css">
+		/* 导航条样式 start */
+		.navbar-dark{
+		background-color: #111;
+		}
+		.nav1-item .nav-link{
+		color:#fff!important;
+		padding:15px!important;
+		}
+		/* 导航条样式 end */
+		a{
+		text-decoration: none;
+		}
+		a:hover{
+		text-decoration: none
+		}
+		.chancolor a{
+		color:#fff!important;
+		}
+		</style>
+	</head>
+	<body id="top">
+		<!-- 导航条start -->
+		<nav class="navbar navbar-expand-lg navbar-dark text-center">
+			<div class="col-lg-4 col-4"></div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon" style="text-align:right"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active  nav1-item" >
+						<a class="nav-link" href="home.html"><i class="iconfont icon-shouye" style="color:#2FDAB8;font-weight:bold"></i>首页 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item  nav1-item">
+						<a class="nav-link" href="guoshuzibai.html"><i class="iconfont icon-taolun" style="color:#2FDAB8;font-weight:bold"></i>果蔬自白</a>
+					</li>
+					<li class="nav-item nav1-item">
+						<a class="nav-link" href="dingzhi.html"><i class="iconfont icon-dingzhi" style="color:#2FDAB8;font-weight:bold"></i>定制</a>
+					</li>
+					<li class="nav-item nav1-item">
+						<a class="nav-link" href="cart.html"><i class="iconfont icon-gouwuchekong" style="color:#2FDAB8;font-weight:bold"></i>购物车</a>
+					</li>
+					<li class="nav-item nav1-item">
+						<a class="nav-link" href="wode.html"><i class="iconfont icon-gouwuchekong" style="color:#2FDAB8;font-weight:bold"></i>我的</a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0 row" style="margin-left:18px">
+					<input class="form-control col-7" type="search" placeholder="Search" aria-label="Search">
+					<div class="col-1"></div>
+					<button class="btn btn-outline-success my-2 my-sm-0 col-2" type="submit"><i class='iconfont icon-sousuo'></i></button>
+				</form>
+			</div>
+		</nav>
+		<!-- 导航条end -->
+		<!-- 轮播图start -->
+		<div class="csslider infinity" id="slider1">
+			<input type="radio" name="slides" checked="checked" id="slides_1"/>
+			<input type="radio" name="slides" id="slides_2"/>
+			<input type="radio" name="slides" id="slides_3"/>
+			<input type="radio" name="slides" id="slides_4"/>
+			<ul>
+				<li>
+					<div id="bg">
+						<div class="container">
+							<div class="banner-text">
+								<h6> 新鲜的蔬菜</h6>
+								<h3> 来自我们精心挑选的农场</h3>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div id="bg1">
+						<div class="container">
+							<div class="banner-text">
+								<h6> 新鲜的水果</h6>
+								<h3> 来自我们精心挑选的果园</h3>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div id="bg2">
+						<div class="container">
+							<div class="banner-text">
+								<h6> 每一份呈现在网站上的果蔬</h6>
+								<h3> 经过了我们的严格筛选</h3>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div id="bg3">
+						<div class="container">
+							<div class="banner-text">
+								<h6> 每一份订制</h6>
+								<h3> 是我们数次的调研</h3>
+							</div>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+			<div class="arrows">
+				<label for="slides_1"></label>
+				<label for="slides_2"></label>
+				<label for="slides_3"></label>
+				<label for="slides_4"></label>
+			</div>
+			<div class="navigation">
+				<div>
+					<label for="slides_1"></label>
+					<label for="slides_2"></label>
+					<label for="slides_3"></label>
+					<label for="slides_4"></label>
+				</div>
+			</div>
+		</div>
+		<!-- 轮播图end -->
+		<!-- 惠农源简介start -->
+		<section class="about py-5" id="about">
+			<div class="container py-md-3">
+				<h3 class="heading text-center mb-md-5 mb-4">惠农源</h3>
+				<div class="row about-grids agile-info">
+					<div class="col-lg-6 mb-lg-0 w3-agile-grid mb-5">
+						<h4 class="mb-4"><span class="fa fa-check"></span>  欢迎来到惠农源！</h4>
+						<p class="mb-4"> &emsp;&emsp;惠农源，一个为果蔬量身打造的平台，旨在成为农民与顾客之间最直接的桥梁。在这里，有你没听过、没尝过的优质果蔬，也可以收获亲身体验农业种植的乐趣。我们不种植果蔬，我们只是大自然的挖掘者。在这里，你一定能在这里有所收获，快去寻找你的惊喜吧！</p>
+						
+						
+						<a href="#popup1">了解更多 </a>
+					</div>
+					<div class="col-lg-6 col-md-8 w3-agile-grid pr-md-0">
+						<img src="../images/abou.jpg" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 惠农源简介end -->
+		<!-- 标签页start -->
+		<ul class="nav nav-tabs justify-content-center w" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="color: #000">水果</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="color: #000">蔬菜</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" style="color: #000">定制</a>
+			</li>
+		</ul>
+		
+		<!-- 标签页内容start -->
+		<div class="tab-content" id="app">
+			<!-- 水果start -->
+			<div class="tab-pane fade show active w" id="home" role="tabpanel" aria-labelledby="home-tab">
+				<div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+					<div class="row">
+						<div class="col-lg-4 col-12 col-md-6 col-sm-6 ser-icon text-center my-3"  v-for="fruit in fruits">
+							<div class="grid-wthree-service ">
+								<img v-bind:src="fruit.productImg" class="img-fluid" alt="news image">
+								<div class="ser-text-wthree mt-3">
+									<h4 v-text="fruit.productName"></h4>
+									<p class="mt-2" v-text="fruit.productDesc"></p>
+									<p class="card-text chancolor" v-text="fruit.productPrice"></p>
+									<button class="btn"><a href="detail.html">查看</a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 蔬菜start -->
+			<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				
+				<div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+					<div class="row">
+						<div class="col-lg-4 col-12 col-md-6 col-sm-6 ser-icon text-center my-3"  v-for="veget in vegets">
+							<div class="grid-wthree-service ">
+								<img v-bind:src="veget.productImg" class="img-fluid" alt="news image">
+								<div class="ser-text-wthree mt-3">
+									<h4 v-text="veget.productName"></h4>
+									<p class="mt-2" v-text="veget.productDesc"></p>
+									<p class="card-text" v-text="veget.productPrice"></p>
+									<button class="btn ">查看</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 定制start -->
+			<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+				
+				<div class="container py-lg-5 py-md-4 py-sm-4 py-3 ">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-sm-6 ser-icon text-center my-3"  v-for="custom in customs">
+							<div class="grid-wthree-service ">
+								<img v-bind:src="custom.productImg" class="img-fluid" alt="news image">
+								<div class="ser-text-wthree mt-3">
+									<h4 v-text="custom.productName"></h4>
+									<p class="mt-2" v-text="custom.productDesc"></p>
+									<p class="card-text" v-text="custom.productPrice"></p>
+									<button class="btn ">查看</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+			<!-- 标签页内容end -->
+		</div>
+		<!-- 标签页end -->
+
+		<span id="return-top" class="text-center" style="position:fixed;bottom:10%;right:10%;color:#fff;border:1px solid #ccc;width:48px">
+			<a href="#"><i class='iconfont icon-huidaodingbu-copy text-dark'style="font-size:30px"></i></a>
+		</span>
+
+		<!-- 页脚start -->
+		<footer>
+			<div class="bg-dark text-center">
+				<p style="padding:25px 0;color:#ddd">© 2019 惠农源 | Design by <a href="#" target="_blank" class="text-white">电商十五组</a></p>
+			</div>
+		</footer>
+		<!-- 页脚end -->
+		<!-- 简介弹出页面start -->
+		<div id="popup1" class="overlay">
+			<div class="popup">
+				<img src="../images/abou.jpg" alt="Popup Image" class="img-fluid" />
+				<p class="mt-4 editContent">&emsp;&emsp;惠农源，一个为果蔬量身打造的平台，旨在成为农民与顾客之间最直接的桥梁。在这里，有你没听过、没尝过的优质果蔬，也可以收获亲身体验农业种植的乐趣。我们不种植果蔬，我们只是大自然的挖掘者。在这里，你一定能在这里有所收获，快去寻找你的惊喜吧！</p>
+				<a class="close" href="#about">&times;</a>
+			</div>
+		</div>
+		<!-- 简介弹出页面 end -->
+		<script type="text/javascript">
+			$(function(){
+				$('#return-top').hide();
+				$(function(){
+					$(window).scroll(function(){
+						if($(window).scrollTop()>300){
+							$('#return-top').fadeIn(300);
+							}
+							else{$('#return-top').fadeOut(200);}
+						
+						});
+						$('#return-top').click(function(){
+							
+							$('body,html').animate({scrollTop:0},200);
+							return false;	
+						})
+				})	
+			})
+		    var vm = new Vue({
+              el:"#app",
+              data:{
+                fruits:[],
+				vegets:[],
+				customs:[]
+              },
+              created:function(){
+                $.ajax({
+                  url:"../data/product.js",
+                  type:"GET",
+                  dataType:"jsonp",
+                  jsonpCallback:"jsond",
+                  crossDomain:true
+                }).done((e)=>{
+                   console.log(e);
+                   this.fruits = e.fruits;
+                   this.vegets = e.vegets;
+                   this.customs = e.customs;
+                });
+              }            
+            })
+		</script>
+
+	</body>
+</html>
