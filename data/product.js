@@ -62,7 +62,7 @@ jsond({
 			"productId":"8",
 			"productType":"veg",
 			"productPrice":"39",
-			"productName":"徐州大红袍萝卜",
+			"productName":"大红袍萝卜",
 			"productDesc":"清热、解毒、利湿、散瘀、养心清血、健胃消食、化痰止咳。",
 			"productImg":"../images/luobo.jpg"
 			
@@ -103,7 +103,7 @@ jsond({
 			"productId":"13",
 			"productType":"cus",
 			"productPrice":"39",
-			"productName":"烤面包芦笋沙拉",
+			"productName":"面包芦笋沙拉",
 			"productDesc":"芦笋的嫩茎富含多种维生素和各种氨基酸，可作蔬菜食用,也可加工制成罐头食...",
 			"productImg":"../images/7g.png"
 		},
