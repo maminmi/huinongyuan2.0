@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+      <title>惠农源丨我的</title>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="../favicon.ico">
+      
+      <link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+      <!-- Core stylesheets -->
+      <link rel="stylesheet" href="../css/bootstrap.min.css" class="theme-settings-bootstrap-css">
+      <link rel="stylesheet" href="../css/appwork.css" class="theme-settings-appwork-css">
+      <link rel="stylesheet" href="../css/uikit.css">
+      <link rel="stylesheet" href="../css/account.css">
+      <script src="../js/vue.js"></script>
+      <script src="../js/jquery.min.js"></script>
+      
+      
+
+      <style type="text/css">
+        body {
+          background: #f5f5f5;
+        }
+        .layout-wrapper{
+          padding:0 20px;
+        }
+        .navbar-dark{
+          background-color: #111!important;
+        }
+        .nav1-item .nav-link{
+          color:#fff!important;
+          padding:10px!important;
+          vertical-align: center!important;
+          margin-bottom: 5px;
+          margin-top: 5px;
+        }
+        .activech .active{
+          color: #222;
+
+        }
+        .nav-pills .nav-link.active{
+          color: #fff;
+          background-color:#17a2b8;
+        }
+        .nav-items .nav1-link{
+          padding:8px 10px;
+        }
+        a{
+          text-decoration: none;
+          color:#17a2b8;
+        }
+        a:hover{
+          text-decoration: none;
+          color:#28c3d7;
+        }
+        .row{
+          margin-right: 0px;
+          margin-left: 0px;
+        }
+        .reduce{
+          padding-right: 0px;
+          padding-left: 0px;
+        }
+      </style>
+    </head>
+    <body>
+     <!--  <div class="page-loader">
+        <div class="bg-primary"></div>
+      </div> -->
+     <!-- 导航条start -->
+    <nav class="navbar navbar-expand-lg navbar-dark text-center">
+      <div class="col-lg-4 col-4"></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="text-align:right"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active  nav1-item" >
+            <a class="nav-link" href="home.html"><i class="iconfont icon-shouye" style="color:#2FDAB8;font-weight:bold"></i>首页 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item  nav1-item">
+            <a class="nav-link" href="guoshuzibai.html"><i class="iconfont icon-taolun" style="color:#2FDAB8;font-weight:bold"></i>果蔬自白</a>
+          </li>
+          <li class="nav-item nav1-item">
+            <a class="nav-link" href="dingzhi.html"><i class="iconfont icon-dingzhi" style="color:#2FDAB8;font-weight:bold"></i>定制</a>
+          </li>
+          <li class="nav-item nav1-item">
+            <a class="nav-link" href="cart.html"><i class="iconfont icon-gouwuchekong" style="color:#2FDAB8;font-weight:bold"></i>购物车</a>
+          </li>
+          <li class="nav-item nav1-item">
+            <a class="nav-link" href="wode.html"><i class="iconfont icon-gouwuchekong" style="color:#2FDAB8;font-weight:bold"></i>我的</a>
+          </li>
+
+          
+        </ul>
+        <form class="form-inline my-2 my-lg-0 row" style="margin-left:2px">
+          <a href="search.html" class="col-7"><input class="form-control" type="text" placeholder="水蜜桃" style="width:110%"></a>
+          <div class="col-1"></div>
+          <button class="btn btn-outline-success my-2 my-sm-0 col-2" type="submit"><i class='iconfont icon-sousuo'></i></button>
+        </form>
+      </div>
+    </nav>
+    <!-- 导航条end -->
+      <!-- Layout wrapper -->
+      <div class="layout-wrapper layout-2" id="app">
+        <div class="layout-inner">
+          <!-- Layout container -->
+          <div class="layout-container">
+            <!-- Layout navbar -->
+            <nav class="layout-navbar navbar navbar-expand-lg align-items-lg-center container-p-x row" id="layout-navbar">
+              <div class="col-lg-1"></div>
+              <!-- Sidenav toggle (see assets/css/demo/demo.css) -->
+              <h4 class="font-weight-bold col-4" style="margin-top:16px">
+              &nbsp;&nbsp;我的
+              </h4>             
+            </nav>
+                <!-- / Layout navbar -->
+                <!-- Layout content -->
+                <div class="layout-content">
+                  <!-- Content -->
+                  <div class="container-fluid flex-grow-1 container-p-y row">
+                    <div class="col-md-1 reduce"></div>
+                    <div class="card overflow-hidden col-md-10 col-12 reduce">
+                      <div class="row no-gutters row-bordered row-border-light">
+
+                        <!-- 标签页左边导航start -->
+                        <div class="col-md-3 pt-0">
+                          <div class="list-group list-group-flush account-settings-links activech">
+                            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general"><i class="iconfont icon-icon03"></i>&nbsp;&nbsp;个人中心</a>
+                            
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications"><i class="iconfont icon-order"></i>&nbsp;&nbsp;订单</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-tongzhi"><i class="iconfont icon-tongzhi"></i>&nbsp;&nbsp;通知</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-xiaoxi"><i class="iconfont icon-iconfontzhizuobiaozhun023110"></i>&nbsp;&nbsp;消息</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info"><i class="iconfont icon-shoucang"></i>&nbsp;&nbsp;我的收藏</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links"><i class="iconfont icon-tubiao-youhuiquan"></i>&nbsp;&nbsp;优惠券</a>
+                            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections"><i class="iconfont icon-a069"></i>&nbsp;&nbsp;客服中心</a>
+                            
+                          </div>
+                        </div>
+                        <!-- 标签页左边导航end -->
+
+                        <!-- 标签页具体内容start -->
+                        <div class="col-md-9">                          
+                          <div class="tab-content">
+                            <!-- 个人中心start -->
+                            <div class="tab-pane fade show active" id="account-general">
+                              <div class="card-body media align-items-center">
+                                <img v-bind:src="user.userImg" alt="" class="d-block ui-w-80">
+                                <div class="media-body ml-4">
+                                  <label class="btn btn-outline-info">
+                                    上传新照片
+                                    <input type="file" class="account-settings-fileinput">
+                                  </label> &nbsp;
+                                  <button type="button" class="btn btn-default md-btn-flat">重设</button>
+                                  <div class="text-light small mt-1">允许JPG，GIF或PNG。最大尺寸为800K</div>
+                                </div>
+                              </div>
+                              <hr class="border-light m-0">
+                              
+                              <div class="card-body" >
+                                <div class="form-group">
+                                  <label class="form-label">昵称</label>
+                                  <input type="text" class="form-control mb-1" v-bind:value="user.userName">
+                                </div>
+                                
+                                <div class="form-group">
+                                  <label class="form-label">电子邮箱</label>
+                                  <input type="text" class="form-control mb-1" value="123321456@qq.com">
+                                  <div class="alert alert-warning mt-3">
+                                    您的电子邮件未得到确认。请检查您的收件箱。<br>
+                                    <a href="javascript:void(0)">点击重发</a>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label class="form-label">地址</label>
+                                  <input type="text" class="form-control" value="徐州市铜山区">
+                                </div>
+                                <div class="form-group">
+                                  <a href="denglu.html">退出登录</a>
+                                </div>
+                                <div class="text-right mt-3">
+                                  <button type="button" class="btn btn-info">保存更改</button>&nbsp;
+                                  <button type="button" class="btn btn-default">取消</button>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!-- 个人中心 end -->
+
+                            <!-- 通知start -->
+                            <div class="tab-pane fade" id="account-tongzhi">
+                              
+                              <div class="bg-info text-center text-white font-weight-bold p-3">
+                                4条新通知
+                              </div>
+                              <div class="list-group list-group-flush">
+                                <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                                  <div class="ui-icon ui-icon-sm ion ion-md-person-add bg-info border-0 text-white"></div>
+                                  <div class="media-body line-height-condenced ml-3">
+                                    <div class="text-body">你有 <strong>4个</strong>新粉丝</div>
+                                    <div class="text-light small mt-1">
+                                      快来看看吧。
+                                    </div>
+                                  </div>
+                                </a>
+                                
+                              </div>
+                              <a href="javascript:void(0)" class="d-block text-center text-light small p-2 my-1">显示所有通知</a>
+                            </div>
+                             <!-- 通知end -->
+
+                            <!-- 消息start -->
+                            <div class="tab-pane fade" id="account-xiaoxi">
+                              
+                              <div class="bg-info text-center text-white font-weight-bold p-3">
+                                3条新消息
+                              </div>
+                              <div class="list-group list-group-flush" v-for="info in infos">
+                                <a href="javascript:void(0)" class="list-group-item list-group-item-action media d-flex align-items-center">
+                                  <img v-bind:src="info.infoImg" class="d-block ui-w-40 rounded-circle" alt>
+                                  <div class="media-body ml-3">
+                                    <div class="text-body line-height-condenced" v-text="info.infocontent"></div>
+                                    <div class="text-light small mt-1" v-text="info.infotime">
+                                      
+                                    </div>
+                                  </div>
+                                </a>
+                              </div>
+                              <a href="javascript:void(0)" class="d-block text-center text-light small p-2 my-1">显示所有消息</a>
+                              
+                            </div>
+                            <!-- 消息end -->
+
+                            <!-- 订单start -->
+                            <div class="tab-pane fade" id="account-notifications">
+                              
+                              <!-- begin nav-pills -->
+                              <ul class="nav nav-pills">
+                                <li class="nav-items">
+                                  <a href="#nav-pills-tab-1" data-toggle="tab" class="nav-link nav1-link active">
+                                    <span class="d-sm-none">待付款</span>
+                                    <span class="d-sm-block d-none">待付款</span>
+                                  </a>
+                                </li>
+                                <li class="nav-items">
+                                  <a href="#nav-pills-tab-2" data-toggle="tab" class="nav-link nav1-link">
+                                    <span class="d-sm-none">进行中</span>
+                                    <span class="d-sm-block d-none">进行中</span>
+                                  </a>
+                                </li>
+                                <li class="nav-items">
+                                  <a href="#nav-pills-tab-3" data-toggle="tab" class="nav-link nav1-link">
+                                    <span class="d-sm-none">评&nbsp;价</span>
+                                    <span class="d-sm-block d-none">评&nbsp;价</span>
+                                  </a>
+                                </li>
+                                <li class="nav-items">
+                                  <a href="#nav-pills-tab-4" data-toggle="tab" class="nav-link nav1-link">
+                                    <span class="d-sm-none">退款/售后</span>
+                                    <span class="d-sm-block d-none">退款/售后</span>
+                                  </a>
+                                </li>
+                              </ul>
+                              <!-- end nav-pills -->
+                              <!-- begin tab-content -->
+                              <div class="tab-content">
+                                <!-- begin tab-pane -->
+                                <div class="tab-pane fade active show" id="nav-pills-tab-1">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered m-0">
+                                      <tbody>
+                                        <tr>
+                                          <td class="p-4">
+                                            <div class="media align-items-center">
+                                              <img src="../images/xilanhua.png" class="d-block ui-w-40 ui-bordered mr-4" alt>
+                                              <div class="media-body">
+                                                <a href="dingdanxiangqing.html" class="d-block text-body">西兰花 <span class="text-muted">#3455632</span></a>
+                                                <small>
+                                                精细选种，人工除草远离化学药剂，当天现摘现发，整棵发货。
+                                                </small>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <!-- Set column width -->
+                                          <td class="align-middle p-4" style="width: 66px;">
+                                            x1
+                                          </td>
+                                          <!-- Set column width -->
+                                          <td class="text-right font-weight-semibold align-middle p-4" style="width: 100px;">
+                                            ￥39.00
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <!-- end tab-pane -->
+                                <!-- begin tab-pane -->
+                                <div class="tab-pane fade" id="nav-pills-tab-2">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered m-0">
+                                      <tbody>
+                                        <tr>
+                                          <td class="p-4">
+                                            <div class="media align-items-center">
+                                              <img src="../images/g7.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
+                                              <div class="media-body">
+                                                <a href="dingdanxiangqing.html" class="d-block text-body">樱桃 <span class="text-muted">#3455632</span></a>
+                                                <small>
+                                                烟台大樱桃，肉厚核小、饱满多汁、脆甜可口、色泽鲜艳、新鲜温暖。
+                                                </small>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <!-- Set column width -->
+                                          <td class="align-middle p-4" style="width: 66px;">
+                                            x1
+                                          </td>
+                                          <!-- Set column width -->
+                                          <td class="text-right font-weight-semibold align-middle p-4" style="width: 100px;">
+                                            ￥39.00
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <!-- end tab-pane -->
+                                <!-- begin tab-pane -->
+                                <div class="tab-pane fade" id="nav-pills-tab-3">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered m-0">
+                                      <tbody>
+                                        <tr>
+                                          <td class="p-4">
+                                            <div class="media align-items-center">
+                                              <img src="../images/g15.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
+                                              <div class="media-body">
+                                                <a href="dingdanxiangqing.html" class="d-block text-body">丰县白酥梨 <span class="text-muted">#3455632</span></a>
+                                                <small>
+                                                  酥脆爽口，浓甜如蜜，风味纯正，更兼皮薄多汁、弹指即破、入口即酥。
+                                                </small>
+                                              </div>
+                                            </div>
+                                          </td>
+                                          <!-- Set column width -->
+                                          <td class="align-middle p-4" style="width: 66px;">
+                                            x1
+                                          </td>
+                                          <!-- Set column width -->
+                                          <td class="text-right font-weight-semibold align-middle p-4" style="width: 100px;">
+                                            ￥39.00
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <!-- end tab-pane -->
+                                <!-- begin tab-pane -->
+                                <div class="tab-pane fade" id="nav-pills-tab-4">
+                                  <div class="table-responsive">
+                                    <table class="table table-bordered m-0">
+                                      <tbody>
+                                        <tr>
+                                          <td class="p-4"><a href="dingdanxiangqing.html">
+                                            <div class="media align-items-center">
+                                              <img src="../images/g4.jpg" class="d-block ui-w-40 ui-bordered mr-4" alt>
+                                              <div class="media-body">
+                                                <a href="dingdanxiangqing.html" class="d-block text-body"> 菠萝<span class="text-muted">#3455632</span></a>
+                                                <small>
+                                                  果肉色黄，质爽脆，纤维少，清甜可口，既可鲜食，也可加工罐头。
+                                                </small>
+                                              </div>
+                                            </div></a>
+                                          </td>
+                                          <!-- Set column width -->
+                                          <td class="align-middle p-4" style="width: 66px;">
+                                            x1
+                                          </td>
+                                          <!-- Set column width -->
+                                          <td class="text-right font-weight-semibold align-middle p-4" style="width: 100px;">
+                                            ￥39.00
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!-- 订单end -->
+                          </div>                          
+                        </div>
+                        <!-- 标签页内容end -->
+                      </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                  </div>
+                  <!-- / Content -->
+                </div>
+                <!-- Layout content -->
+              </div>
+              <!-- / Layout container -->
+            </div>
+            <!--  -->
+            <!-- <div class="layout-overlay layout-sidenav-toggle"></div> -->
+          </div>
+          <!-- / Layout wrapper -->
+          <script>
+            var vm = new Vue({
+              el:"#app",
+              data:{
+                user:{
+                  userName:"",
+                  userImg:"",
+                },
+                infos:[],
+              },
+              created:function(){
+                $.ajax({
+                  url:"../data/user.js",
+                  type:"GET",
+                  dataType:"jsonp",
+                  jsonpCallback:"jsonf",
+                  crossDomain:true
+                }).done((e)=>{
+                   console.log(e);
+                   this.user.userName = e.user.userName;
+                   this.user.userImg = e.user.userImg;
+                   this.infos=e.infos;
+                   console.log(this.user);
+                });
+              }
+            })
+          </script>
+
+         <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+
+        </body>
+      </html>

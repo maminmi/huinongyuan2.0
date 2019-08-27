@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>惠农源 | 搜索</title>
+		<!-- 引入icon  css文件 -->
+		<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">  <!-- type 可省略 -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css" >
+		<!-- 引入icon font css -->
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+		<script type="text/javascript" src="../js/vue.js"></script>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<style type="text/css">
+			.title{
+				padding: 10px;
+				text-align: center;
+				background-color: #000;
+				color: #fff;
+				font-family:  Times, TimesNR, 'New Century Schoolbook',
+				Georgia, 'New York', serif;
+			}
+			.title a{
+				position: absolute;
+				left:13px;
+				top:5px;
+			}
+			.title .icon-fanhui{
+				font-size: 30px;
+				color: #fff;
+			}
+			a{
+				text-decoration: none;
+				
+			}
+			.title a{
+				color:#fff;
+			}
+			.title a:hover{
+				color:#fff;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+			.lishisousuo li,
+			.cainixihuan li{
+				list-style: none;
+				padding: 2px;
+			}
+			.lishisousuo a,
+			.cainixihuan a{
+				color: #666;
+			}
+			.lishi,
+			.like{
+				color: #333;
+				padding-left: 15px;
+				padding-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div class="title">
+				<a href="home.html"><i class='iconfont icon-fanhui'></i></a>
+				<div class="form-inline row" style="margin-left:45px">
+						<input class="form-control col-8" type="text" placeholder="水蜜桃" v-model="lishisousuo">
+						<div class="col-1"></div>
+						<button class="btn btn-success col-2 col-lg-1" @click="submitsearch()"><i class='iconfont icon-sousuo'></i></button>
+				</div>
+			</div>
+			<h5 class="lishi">历史搜索</h5>
+			<ul class="lishisousuo">
+				<li v-for="item in list"><a href="">{{item}}</a></li>
+				<li><a href="">水蜜桃</a></li>
+				<li><a href="">红富士苹果</a></li>
+				<li><a href="">车厘子</a></li>
+				<li><a href="">猕猴桃 现摘</a></li>
+			</ul>
+			<hr>
+			<h5 class="like">猜你喜欢</h5>
+			<ul class="cainixihuan">
+				<li><a href="">新鲜毛桃</a></li>
+				<li><a href="">青柠檬</a></li>
+				<li><a href="">白酥梨</a></li>
+				<li><a href="">菠萝</a></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el:"#app",
+				data:{
+					list:[],
+					lishisousuo:"",
+				},
+				methods:{
+					submitsearch:function(){
+						this.list.push(this.lishisousuo);
+						this.lishisousuo = "";
+					}
+				}
+			}) 
+		</script>
+    </body>
+</html>

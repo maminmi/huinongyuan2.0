@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>惠农源 | 果蔬自白</title>
+		<link rel="icon" type="image/x-icon" href="../favicon.ico">
+		<link rel="stylesheet" href="../css/bootstrap.min.css" >
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<script src="../js/vue.js"></script>
+		<!-- 引入icon font css -->
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css">
+		<style type="text/css">
+			.navbar-dark{
+				background-color: #000;
+				margin-bottom: 10px;
+			}
+			.nav-item .nav-link{
+				color:#fff!important;
+				padding:15px!important;
+			}
+			.card{
+				background-color: #ddd;
+				margin: 0px 10px;
+				padding: 0 10px;
+				border: none!important;
+			}
+			.card img{
+				margin-top: 10px;
+				height: 300px;
+				border-radius: 10px!important;
+				width: auto;
+			}
+			.card a{
+				text-decoration: none;
+				color: #222;
+			}
+			.card a:hover{
+				text-decoration: none;
+				color: #333;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 顶部导航开始 -->
+		<nav class="navbar navbar-expand-lg navbar-dark text-center">
+			<div class="col-lg-4 col-4"></div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon" style="text-align:right"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="home.html"><i class="iconfont icon-shouye" style="color:#2FDAB8;font-weight:bold"></i>首页 <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="guoshuzibai.html"><i class="iconfont icon-taolun" style="color:#2FDAB8;font-weight:bold"></i>果蔬自白</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="dingzhi.html"><i class="iconfont icon-dingzhi" style="color:#2FDAB8;font-weight:bold"></i>定制</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="cart.html"><i class="iconfont icon-gouwuchekong" style="color:#2FDAB8;font-weight:bold"></i>购物车</a>
+					</li>
+					<li class="nav-item nav1-item">
+            			<a class="nav-link" href="wode.html"><i class="iconfont icon-gouwuchekong" style="color:#2FDAB8;font-weight:bold"></i>我的</a>
+          			</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0 row" style="margin-left:2px">
+					<a href="search.html" class="col-7"><input class="form-control" type="text" placeholder="水蜜桃" style="width:110%"></a>
+
+					<div class="col-1"></div>
+					<button class="btn btn-outline-success my-2 my-sm-0 col-2" type="submit"><i class='iconfont icon-sousuo'></i></button>
+				</form>
+			</div>
+		</nav>
+		<!-- 顶部导航结束 -->
+		<div class="container" id="app">
+			<div class="col-lg-1" ></div>
+			<div class="card-group" >
+				<div class="card" v-for="superProduct in superProducts" > 
+					<img :src="superProduct.img" class="card-img-top" alt="...">
+					<div class="card-body">
+						<a :href="superProduct.href"><h5 class="card-title">{{superProduct.maintitle}} <small>{{superProduct.superProductName}}</small></h5>
+							<p class="card-text" style="font-size:14px" v-text="superProduct.content">&emsp;&emsp;</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></a>
+						</div>
+					</div>
+				</div>
+			<div class="col-lg-1"></div>
+		</div>
+		<script>
+		    var vm = new Vue({
+              el:"#app",
+              data:{
+                superProducts:[],
+              },
+              created:function(){
+                $.ajax({
+                  url:"../data/guoshuzibai.js",
+                  type:"GET",
+                  dataType:"jsonp",
+                  jsonpCallback:"jsonc",
+                  crossDomain:true
+                }).done((e)=>{
+                   console.log(e);
+                   this.superProducts = e.superProducts;
+                   console.log(this.superProduct);
+                });
+              }
+            
+            })
+		</script>
+
+		</body>
+	</html>
