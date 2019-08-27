@@ -5,7 +5,7 @@ jsond({
 			"productType":"fru",
 			"productPrice":"39",
 			"productName":"新沂水蜜桃",
-			"productDesc":"白里透红，个大、味甜、肉脆、口感好，补中益气、养阴生津",
+			"productDesc":"白里透红，个大、味甜、肉脆、口感好，补中益气",
 			"productImg":"../images/g10.jpg",
 		},
 		{
