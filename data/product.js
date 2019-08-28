@@ -87,7 +87,7 @@ jsond({
 			"productId":"11",
 			"productType":"veg",
 			"productPrice":"39",
-			"productName":"徐州大红袍萝卜",
+			"productName":"大红袍萝卜",
 			"productDesc":"清热、解毒、利湿、散瘀、养心清血、健胃消食、化痰止咳。",
 			"productImg":"../images/luobo.jpg"
 		},
