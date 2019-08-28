@@ -13,7 +13,7 @@ jsond({
 			"productType":"fru",
 			"productPrice":"39",
 			"productName":"大洞山石榴",
-			"productDesc":"贾汪大洞山石榴,果皮亮丽、质感厚重、籽粒晶莹、味美多汁。",
+			"productDesc":"贾汪大洞山石榴,果皮亮丽、质感厚重、籽粒晶莹。",
 			"productImg":"../images/g9.jpg"
 			
 		},
